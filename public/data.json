@@ -2,7 +2,7 @@
 	{   
 		"name": "Ezra Duffy",
         "id" : 1 ,
-        "discription" : "",
+        "discription" : "I think this watch is not for my type.I need a watch that has a good battary life.",
         "ratings" : "3.5"
 
         
@@ -10,31 +10,31 @@
 	{
 		"name": "Graiden Fletcher",
         "id" : 2 ,
-        "discription" : "",
+        "discription" : "I like this watch for it's light weight.It's very comfortable to wear.",
         "ratings" : "4.8"
 	},
 	{
 		"name": "Emily Franco",
         "id" : 3 ,
-        "discription" : "",
+        "discription" : "I can't spend a day without smartwatch.It has a lot of features that attrated to me.",
         "ratings" : "5"
 	},
 	{
 		"name": "Derek Barrett",
         "id" : 4 ,
-        "discription" : "",
+        "discription" : "It's looking style is very gorgious but it's price is little bit higher.",
         "ratings" : "4.5"
 	},
 	{
 		"name": "Rebekah Barrera",
         "id" : 5 ,
-        "discription" : "",
+        "discription" : "I think this is an average quality watch.It's good but it's battary life is poor.",
         "ratings" : "4"
 	},
     {
 		"name": "Rebekah Barrera",
         "id" : 6 ,
-        "discription" : "",
+        "discription" : "I love to wear smartwatch.It's lightweight, style and feature makes me happy.",
         "ratings" : "5"
 	}
 ]

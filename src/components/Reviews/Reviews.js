@@ -1,9 +1,11 @@
 import React from 'react';
+import useReviews from '../../hooks/useReviews';
 
 const Reviews = () => {
+    const [reviews,setReviews] = useReviews()
     return (
         <div>
-            <h1>This is Review page</h1>
+            <h1>This is Review page:{reviews.length}</h1>
         </div>
     );
 };
