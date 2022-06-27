@@ -1,10 +1,19 @@
 import React from 'react';
 import useReviews from '../../hooks/useReviews';
 import ReviewDetails from '../ReviewDetails/ReviewDetails';
+import { useNavigate } from "react-router-dom";
+
 import './Home.css';
 const Home = () => {
     const [reviews,setReviews] = useReviews();
-    const newReviews = reviews.filter(review => review.id<4)
+    let navigate = useNavigate()
+    const showReview =()=>{
+            const path = `/reviews`;
+            navigate(path);
+
+    }
+    const newReviews = reviews.filter(review => review.id<4);
+   
     return (
         <div>
             <div className='main'>
@@ -31,6 +40,8 @@ const Home = () => {
                     ></ReviewDetails>)
                 }
              </div>
+            <button onClick={showReview} className='review-btn'>See All Reviews</button>
+            
             </div>
         </div>
     );
