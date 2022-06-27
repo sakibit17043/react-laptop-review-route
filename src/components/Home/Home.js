@@ -1,6 +1,10 @@
 import React from 'react';
+import useReviews from '../../hooks/useReviews';
+import ReviewDetails from '../ReviewDetails/ReviewDetails';
 import './Home.css';
 const Home = () => {
+    const [reviews,setReviews] = useReviews();
+    const newReviews = reviews.filter(review => review.id<4)
     return (
         <div>
             <div className='main'>
@@ -18,6 +22,15 @@ const Home = () => {
             </div>
             <div className="review">
                 <h2>Customer Review(3)</h2>
+             <div className="reviews">
+                {
+                    newReviews.map(review=><ReviewDetails
+                    key={review.id}
+                    review={review}
+
+                    ></ReviewDetails>)
+                }
+             </div>
             </div>
         </div>
     );
